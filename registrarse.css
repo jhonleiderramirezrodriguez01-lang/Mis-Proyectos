@@ -1,0 +1,128 @@
+﻿@import url("index.css");
+
+.auth-page { min-height: 100vh; background: var(--brand-dark); color: #fff; }
+.auth-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(108,43,217,0.28);
+  border-radius: 24px;
+  backdrop-filter: blur(18px);
+}
+
+.auth-card .card-body { padding: 2rem; }
+.auth-card .hero-eyebrow { margin-bottom: 1rem; display: inline-block; }
+.auth-card .section-title { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 0.75rem; }
+.auth-card .section-desc { color: rgba(255,255,255,0.75); max-width: 100%; margin-bottom: 1.75rem; }
+.auth-card .form-control,
+.auth-card .form-select {
+  background: rgba(255,255,255,0.12) !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+  color: #fff !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-height: 3rem;
+  border-radius: 16px;
+  box-shadow: none;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+.auth-card .form-floating .form-control,
+.auth-card .form-floating .form-select {
+  background: rgba(255,255,255,0.12) !important;
+}
+.auth-card .form-control,
+.auth-card .form-select {
+  caret-color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+.auth-card .form-control::-webkit-input-placeholder,
+.auth-card .form-control::placeholder,
+.auth-card .form-select::-webkit-input-placeholder,
+.auth-card .form-select::placeholder {
+  color: rgba(255,255,255,0.75) !important;
+}
+.auth-card .form-control:focus,
+.auth-card .form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(108,43,217,0.18);
+  border-color: var(--brand-primary);
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+.auth-card .form-group {
+  margin-bottom: 1.8rem;
+}
+.auth-card .form-group label,
+.auth-card .form-label {
+  color: #f5f5ff !important;
+  margin-bottom: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.auth-card .form-floating {
+  margin-bottom: 1.8rem;
+}
+.role-picker {
+  margin-bottom: 1.6rem;
+}
+.role-picker-label {
+  display: block;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+}
+.role-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+.role-option {
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  border-radius: 18px;
+  min-height: 90px;
+  padding: 0.95rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+.role-option i {
+  font-size: 1.25rem;
+}
+.role-option span { font-size: 0.95rem; }
+.role-option:hover {
+  transform: translateY(-2px);
+}
+.role-option.active {
+  border-width: 1px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+.role-cliente.active {
+  background: rgba(0, 195, 255, 0.18);
+  border-color: rgba(0, 195, 255, 0.4);
+}
+.role-vendedor.active {
+  background: rgba(255, 195, 0, 0.18);
+  border-color: rgba(255, 195, 0, 0.45);
+}
+.role-administrador.active {
+  background: rgba(255, 92, 125, 0.18);
+  border-color: rgba(255, 92, 125, 0.45);
+}
+.role-cliente { border-color: rgba(0, 195, 255, 0.2); }
+.role-vendedor { border-color: rgba(255, 195, 0, 0.2); }
+.role-administrador { border-color: rgba(255, 92, 125, 0.2); }
+.auth-card .form-control::placeholder {
+  color: rgba(255,255,255,0.4);
+}
+@media (max-width: 576px) {
+  .role-options { grid-template-columns: 1fr; }
+  .auth-card .form-body { padding: 1.5rem; }
+}
+.auth-card .text-muted-brand { color: rgba(255,255,255,0.75); }
+.auth-card .modal-link-brand { color: var(--brand-primary); font-weight: 600; }
+@media (max-width: 576px) { .auth-card { border-radius: 20px; } }

@@ -1,0 +1,9 @@
+@import url("index.css");
+
+.table-responsive { margin-top: 1rem; }
+
+.card.bg-secondary-soft {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 24px;
+}

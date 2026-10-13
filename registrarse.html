@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Registrarse | System Solution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/registrarse.css">
+</head>
+<body>
+  <section class="auth-page auth-register">
+    <div class="container">
+      <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-md-8 col-lg-6">
+          <div class="card auth-card shadow-lg">
+            <div class="card-body">
+              <div class="text-center mb-4">
+                <span class="hero-eyebrow">Crear Cuenta</span>
+                <h2 class="section-title">Empieza a crecer hoy</h2>
+                <p class="section-desc">
+                  Registra tu empresa para acceder a herramientas de marketing digital y mejorar tu captación de clientes.
+                </p>
+              </div>
+              <form id="registerForm">
+                <div class="form-group mb-3">
+                  <label for="regNombre" class="form-label"><i class="bi bi-person me-1"></i>Nombre completo</label>
+                  <input type="text" class="form-control" id="regNombre" placeholder="Nombre completo" required>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="regEmail" class="form-label"><i class="bi bi-envelope me-1"></i>Email</label>
+                  <input type="email" class="form-control" id="regEmail" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="role-picker mb-4">
+                  <label id="regRoleLabel" class="role-picker-label"><i class="bi bi-person-badge me-1"></i>Elige tu rol</label>
+                  <div class="role-options" role="group" aria-labelledby="regRoleLabel">
+                    <button type="button" class="btn role-option role-cliente" data-role="cliente">
+                      <i class="bi bi-person-fill"></i>
+                      <span>Cliente</span>
+                    </button>
+                    <button type="button" class="btn role-option role-vendedor" data-role="vendedor">
+                      <i class="bi bi-briefcase-fill"></i>
+                      <span>Vendedor</span>
+                    </button>
+                    <button type="button" class="btn role-option role-administrador" data-role="administrador">
+                      <i class="bi bi-shield-lock-fill"></i>
+                      <span>Administrador</span>
+                    </button>
+                  </div>
+                  <input type="hidden" id="regRole" name="role" value="">
+                </div>
+                <div class="form-group mb-4">
+                  <label for="regPassword" class="form-label"><i class="bi bi-lock me-1"></i>Contraseña</label>
+                  <input type="password" class="form-control" id="regPassword" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="btn btn-brand w-100 py-2 mb-3">Crear cuenta</button>
+                <div class="text-center">
+                  <small class="text-muted-brand">¿Ya tienes cuenta? <a href="iniciarsession.html" class="modal-link-brand">Inicia sesión</a></small>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/storage.js"></script>
+  <script src="js/registrarse.js"></script>
+</body>
+</html>

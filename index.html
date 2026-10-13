@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>CodePulse|Desarrollo De Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <i class="bi bi <button type="button" class="btn btn-light"></button></i> CodePulse
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyecto">Proyecto</a></li>
+        <li class="nav-item"><a class="nav-link" href="iniciarsession.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+
+      <!-- Search -->
+      <div class="d-flex align-items-center gap-2 me-2">
+        <div class="input-group input-group-fixed">
+          <input class="form-control form-control-sm newsletter-input" type="text" placeholder="Buscar...">
+          <button class="btn btn-newsletter btn-sm"><i class="bi bi-search"></i></button>
+        </div>
+      </div>
+
+      <!-- Cart mobile -->
+      <div class="d-lg-none my-2">
+        <a href="#" class="btn btn-outline-brand w-100 position-relative">
+          <i class="bi bi-cart3"></i> Carrito
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+        </a>
+      </div>
+
+      <!-- Login button -->
+      <a href="iniciarsession.html" class="btn btn-brand ms-1">
+        <i class="bi bi-person-circle me-1"></i>Ingresar
+      </a>
+    </div>
+
+    <!-- Cart desktop -->
+    <a href="#" class="text-white ms-3 d-none d-lg-block position-relative">
+      <i class="bi bi-cart3 cart-icon-lg"></i>
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger badge-small-text">0</span>
+    </a>
+  </div>
+</nav>
+
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero-section" id="inicio">
+      <div class="container position-relative z-index-1">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <span class="hero-eyebrow"><i class="bi bi-stars me-1"></i>Plataforma de Marketing Digital</span>
+        <h1 class="hero-title">
+          Impulsa tu negocio con<br>
+          <span class="gradient-text">software inteligente</span>
+        </h1>
+        <p class="hero-desc">
+          CodePulse conecta vendedores y clientes en un ecosistema digital seguro,
+          automatizando tus procesos comerciales y amplificando tu presencia online.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="registrarse.html" class="btn btn-brand px-4 py-2">
+            Comenzar gratis <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+          <a href="#servicios" class="btn btn-outline-brand px-4 py-2">
+            Ver servicios
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">+500</div>
+            <div class="hero-stat-label">Clientes activos</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">98%</div>
+            <div class="hero-stat-label">Satisfacción</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">3x</div>
+            <div class="hero-stat-label">ROI promedio</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0">
+        <div class="hero-visual-card">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="hero-panel-label">Panel de rendimiento</span>
+            <span class="hero-badge"><i class="bi bi-circle-fill me-1"></i>En vivo</span>
+          </div>
+          <div class="row g-2 mb-3">
+            <div class="col-6">
+              <div class="metric-pill">
+                <div class="metric-pill-num">$12.4M</div>
+                <div class="metric-pill-label">Ventas mes</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="metric-pill">
+                <div class="metric-pill-num">+34%</div>
+                <div class="metric-pill-label">Crecimiento</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="metric-pill">
+                <div class="metric-pill-num">1,248</div>
+                <div class="metric-pill-label">Usuarios nuevos</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="metric-pill">
+                <div class="metric-pill-num">99.8%</div>
+                <div class="metric-pill-label">Uptime</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-status-text">
+            <i class="bi bi-shield-check me-1 shield-icon"></i>
+            Transacciones seguras · Cifrado SSL · GDPR
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ CAROUSEL ══════════ -->
+<section class="carousel-section">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://placehold.co/1400x420/1A0A33/C4A8FF?text=Automatiza+tu+Marketing+Digital" class="d-block w-100" alt="Marketing Digital">
+        <div class="carousel-caption d-none d-md-block text-start">
+          <div class="hero-caption-box">
+            <h4 class="fw-bold text-white mb-1">Automatización Inteligente</h4>
+            <p class="mb-2 hero-caption-text">Gestiona campañas y ventas desde un solo lugar</p>
+            <button class="btn btn-brand btn-sm">Explorar ahora</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/1400x420/2D1560/FF8FA3?text=Gestión+de+Catálogo+%26+Ventas" class="d-block w-100" alt="Catálogo">
+        <div class="carousel-caption d-none d-md-block text-start">
+          <div class="hero-caption-box">
+            <h4 class="fw-bold text-white mb-1">Catálogo Digital Completo</h4>
+            <p class="mb-2 hero-caption-text">Publica, edita y vende tus servicios al instante</p>
+            <button class="btn btn-brand btn-sm">Ver catálogo</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/1400x420/6C2BD9/ffffff?text=Pagos+Seguros+%26+Reportes+en+Tiempo+Real" class="d-block w-100" alt="Pagos">
+        <div class="carousel-caption d-none d-md-block text-start">
+          <div class="hero-caption-box">
+            <h4 class="fw-bold text-white mb-1">Pagos & Analítica en Tiempo Real</h4>
+            <p class="mb-2 hero-caption-text">Pasarela segura con reportes de actividad avanzados</p>
+            <button class="btn btn-brand btn-sm">Ver reportes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+
+<!-- ══════════ CONTEXTO DEL PROYECTO ══════════ -->
+<section class="project-section" id="proyecto">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <p class="section-eyebrow">Contexto del Proyecto</p>
+        <h2 class="section-title">¿Por qué existe CodePulse?</h2>
+        <p class="section-desc mx-auto mt-3">
+          Una solución diseñada para transformar la comercialización digital y eliminar las barreras que frenan el crecimiento de los negocios.
+        </p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="context-card">
+          <div class="context-icon icon-problem">
+            <i class="bi bi-exclamation-triangle"></i>
+          </div>
+          <h5>Problemática identificada</h5>
+          <p>Muchos negocios enfrentan bajas ventas y ausencia de presencia online. La falta de herramientas digitales integradas impide conectar eficientemente con clientes potenciales y gestionar operaciones de forma ágil.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="context-card">
+          <div class="context-icon icon-context">
+            <i class="bi bi-building"></i>
+          </div>
+          <h5>Entorno y situación</h5>
+          <p>Desarrollado en el marco del Centro Textil y de Gestión Industrial (CTGI), el proyecto responde a la necesidad de digitalizar procesos comerciales bajo estándares de seguridad y escalabilidad empresarial.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="context-card">
+          <div class="context-icon icon-proposal">
+            <i class="bi bi-rocket-takeoff"></i>
+          </div>
+          <h5>Propuesta tecnológica</h5>
+          <p>Un ecosistema digital donde convergen vendedores y clientes bajo gestión centralizada del administrador, con base de datos normalizada en 3FN, pasarela de pagos externa e interfaz responsiva moderna.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ SERVICIOS / PRODUCTOS SOFTWARE ══════════ -->
+<section class="services-section" id="servicios">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <p class="section-eyebrow">Servicios de software</p>
+        <h2 class="section-title">Software y servicios para impulsar tu negocio</h2>
+        <p class="section-desc mx-auto mt-3">
+          Ofrecemos soluciones digitales pensadas para negocios locales y empresas que quieren vender más, captar leads y mejorar su presencia online con productos tipo software.
+        </p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-4">
+        <article class="service-card">
+          <span class="service-rf-badge">PAQ 01</span>
+          <div class="service-icon"><i class="bi bi-browser-safari"></i></div>
+          <h5>Landing Page Pro</h5>
+          <p class="service-intro">Página web profesional para captar clientes, mostrar tu oferta y convertir visitas en cotizaciones.</p>
+          <div class="service-price">Desde $800.000 COP</div>
+          <a href="iniciarsession.html" class="btn btn-brand btn-sm mt-2">Conocer más</a>
+          <div class="service-highlights">
+            <span class="service-chip">Diseño responsive</span>
+            <span class="service-chip">Formulario de contacto</span>
+            <span class="service-chip">WhatsApp integrado</span>
+          </div>
+          <p class="service-cta">Ideal para negocios y emprendimientos que necesitan presencia inmediata.</p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <article class="service-card">
+          <span class="service-rf-badge">PAQ 02</span>
+          <div class="service-icon"><i class="bi bi-graph-up-arrow"></i></div>
+          <h5>SEO Local + Google</h5>
+          <p class="service-intro">Optimización para que tu negocio aparezca más en Google, Maps y búsquedas locales relevantes.</p>
+          <div class="service-price">Desde $950.000 COP</div>
+          <a href="iniciarsession.html" class="btn btn-brand btn-sm mt-2">Conocer más</a>
+          <div class="service-highlights">
+            <span class="service-chip">SEO local</span>
+            <span class="service-chip">Perfil Google</span>
+            <span class="service-chip">Palabras clave</span>
+          </div>
+          <p class="service-cta">Perfecto para restaurantes, talleres, tiendas y servicios del barrio.</p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <article class="service-card">
+          <span class="service-rf-badge">PAQ 03</span>
+          <div class="service-icon"><i class="bi bi-megaphone"></i></div>
+          <h5>Gestión de Redes Sociales</h5>
+          <p class="service-intro">Contenido, calendario y campañas para fortalecer tu marca y aumentar el alcance en Instagram, Facebook y TikTok.</p>
+          <div class="service-price">Desde $1.200.000 COP</div>
+          <a href="iniciarsession.html" class="btn btn-brand btn-sm mt-2">Conocer más</a>
+          <div class="service-highlights">
+            <span class="service-chip">Posts y reels</span>
+            <span class="service-chip">Calendario</span>
+            <span class="service-chip">Contenido visual</span>
+          </div>
+          <p class="service-cta">Diseñado para marcas que quieren crecer con una imagen profesional.</p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <article class="service-card">
+          <span class="service-rf-badge">PAQ 04</span>
+          <div class="service-icon"><i class="bi bi-envelope-paper"></i></div>
+          <h5>Automatización de Email</h5>
+          <p class="service-intro">Campañas de email y mensajes automáticos para recordar, vender y fidelizar clientes con mayor frecuencia.</p>
+          <div class="service-price">Desde $1.500.000 COP</div>
+          <a href="iniciarsession.html" class="btn btn-brand btn-sm mt-2">Conocer más</a>
+          <div class="service-highlights">
+            <span class="service-chip">Email marketing</span>
+            <span class="service-chip">Automatizaciones</span>
+            <span class="service-chip">Reportes</span>
+          </div>
+          <p class="service-cta">Útil para empresas con catálogo, reservas o clientes recurrentes.</p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <article class="service-card">
+          <span class="service-rf-badge">PAQ 05</span>
+          <div class="service-icon"><i class="bi bi-person-lines-fill"></i></div>
+          <h5>CRM y Gestión de Leads</h5>
+          <p class="service-intro">Sistema para organizar contactos, seguimientos y oportunidades de venta en un solo panel.</p>
+          <div class="service-price">Desde $2.000.000 COP</div>
+          <a href="iniciarsession.html" class="btn btn-brand btn-sm mt-2">Conocer más</a>
+          <div class="service-highlights">
+            <span class="service-chip">Base de clientes</span>
+            <span class="service-chip">Seguimiento</span>
+            <span class="service-chip">Reportes</span>
+          </div>
+          <p class="service-cta">Ideal para equipos comerciales que necesitan orden y control.</p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <article class="service-card">
+          <span class="service-rf-badge">PAQ 06</span>
+          <div class="service-icon"><i class="bi bi-bar-chart-line-fill"></i></div>
+          <h5>Dashboard de Analítica</h5>
+          <p class="service-intro">Panel de métricas para ver tráfico, conversiones, ventas y oportunidades de mejora en tiempo real.</p>
+          <div class="service-price">Desde $500.000 COP</div>
+          <a href="iniciarsession.html" class="btn btn-brand btn-sm mt-2">Conocer más</a>
+          <div class="service-highlights">
+            <span class="service-chip">KPIs</span>
+            <span class="service-chip">Indicadores</span>
+            <span class="service-chip">Estrategia</span>
+          </div>
+          <p class="service-cta">La mejor opción de entrada para impulsar decisiones de negocio.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ REQUERIMIENTOS NO FUNCIONALES ══════════ -->
+<section class="rnf-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-7 text-center">
+        <p class="section-eyebrow">Calidad del Sistema</p>
+        <h2 class="section-title">Estándares que garantizan la excelencia</h2>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-sm-6 col-lg-3">
+        <div class="rnf-item">
+          <div class="rnf-icon"><i class="bi bi-lightning"></i></div>
+          <div>
+            <h6>Rendimiento</h6>
+            <p>Resultados de búsqueda en menos de 5 segundos garantizados.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="rnf-item">
+          <div class="rnf-icon"><i class="bi bi-shield-check"></i></div>
+          <div>
+            <h6>Seguridad</h6>
+            <p>Contraseñas cifradas y acceso restringido por niveles de permisos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="rnf-item">
+          <div class="rnf-icon"><i class="bi bi-phone"></i></div>
+          <div>
+            <h6>Usabilidad</h6>
+            <p>Interfaz intuitiva y navegación fluida en todos los dispositivos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="rnf-item">
+          <div class="rnf-icon"><i class="bi bi-arrow-up-right-circle"></i></div>
+          <div>
+            <h6>Escalabilidad</h6>
+            <p>Arquitectura lista para crecer sin degradar la experiencia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer-ss" id="contacto">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand"><i class="bi bi-lightning-charge-fill me-1"></i>SYSTEM SOLUTION</div>
+        <p class="footer-copy">
+          Ecosistema digital que conecta vendedores y clientes bajo una plataforma segura, escalable y enfocada en resultados de marketing.
+        </p>
+        <div class="footer-social d-flex gap-3 mt-3">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-twitter-x"></i>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Plataforma</h6>
+        <a href="#">Catálogo</a>
+        <a href="#">Vendedores</a>
+        <a href="#">Precios</a>
+        <a href="#">Reportes</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Ayuda</h6>
+        <a href="#">Envíos</a>
+        <a href="#">Garantías</a>
+        <a href="#">FAQs</a>
+        <a href="#">Soporte</a>
+      </div>
+      <div class="col-lg-4">
+        <h6>Newsletter</h6>
+        <p class="footer-note">Recibe novedades y ofertas exclusivas directamente en tu correo.</p>
+        <div class="input-group">
+          <input class="form-control newsletter-input" type="email" placeholder="tu@correo.com">
+          <button class="btn btn-newsletter">Unirse</button>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start footer-legal">
+        © 2026 System Solution — Juan José Butrón Lopera & Jhon Leider Ramírez — CTGI
+      </div>
+      <div class="col-md-6 text-center text-md-end footer-legal footer-legal-links">
+        <a href="#" class="footer-link-inline">Privacidad</a>
+        <a href="#" class="footer-link-inline">Términos</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+</body>
+</html>
